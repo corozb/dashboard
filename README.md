@@ -10,4 +10,4 @@ In this project I have learned:
 Also:
 Includes a clickable, sliding side nav with accordion list items, a nice dropdown user menu, and some slick transition hover action.
 
-[Check it]()
+[Check it](https://corozb.github.io/dashboard/)
