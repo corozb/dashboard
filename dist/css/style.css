@@ -171,7 +171,11 @@ body {
 
 /* Non-mobile styles, 750px breakpoint */
 
+<<<<<<< HEAD
 @media only screen and (min-width: 46.875em) {
+=======
+@media only screen and (min-width: 46.875em)  {
+>>>>>>> gh-pages
   .container {
   grid-template-columns: 240px 1fr;
   grid-template-areas: 
@@ -206,3 +210,16 @@ body {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+>>>>>>> gh-pages
