@@ -4,20 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>dashboard</title>
+  <title>BiShop || Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./dist/css/style.css">
+
 </head>
 <body>
   <div class="container">
-    <div class="burger_menu">
-        <i class="fas fa-bars"></i>
-    </div>
     <header class="header">
-      <div class="search">Search...</div>
-      <div class="profile">Profile</div>
-    </header>
+      <i class="fas fa-bars burger_menu"></i>
+      <div class="search">
+        <input class="search_input" placeholder="Search..." />
+      </div>
+      <div class="persona">
+        <div class="settings">
+          <ul class="list_settings">
+            <li class="profile">
+              <span class="profile_icon"><i class="far fa-user"></i></span>
+              <span class="profile_title">my profile</span>
+            </li>
 
+            <li class="profile">
+              <span class="profile_icon"><i class="fas fa-clipboard-list"></i></span>
+              <span class="profile_title">my account</span>
+            </li>
+
+            <li class="profile">
+              <span class="profile_icon"><i class="fas fa-sign-out-alt"></i></i></span>
+              <span class="profile_title">log out</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     
     <aside class="sidebar">
       <div class="close_button">
