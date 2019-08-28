@@ -64,7 +64,7 @@ html, body {
   align-items: center;
 }
 .sidenav_profile {
-  background: url(/dist/images/cristianalexisorozcobenjumea.PNG);
+  background: url(/dist/images/cristianalexisorozcobenjumea.png);
   width: 64px;
   height: 64px;
   background-size: cover;
@@ -237,7 +237,7 @@ html, body {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  background-image: url(/dist/images/cristianalexisorozcobenjumea.PNG);
+  background-image: url(/dist/images/cristianalexisorozcobenjumea.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -306,16 +306,65 @@ html, body {
 /* ---------------- main ---------- */
 .main {
   grid-area: main;
-  background: #91D4D8
+  background: #1A2229;
+  color: #131B22;
 }
+/* hero */
 .main .main_header {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 20px;
-  padding: 20px;
-  height: 150px;
-  background: #e3e4e6;
-  color: slategray
+  height: 250px;
+  background: url(/dist/images/earth-earth-at-night-night-lights-41949.jpeg);
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hero_wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 160px;
+  padding: 12px 30px;
+  background: rgba(255,255,255,.12);
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+.hero_gretting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gretting {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.header_updates {
+  font-size: 18px;
+}
+.hero_info {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 60px;
+}
+.hero_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero_total {
+  margin-bottom: 2px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #4DDFE0;
+  text-shadow: 0 0 10px #4DDFE0,
+               0 0 20px #4DDFE0;
+}
+.hero_detail {
+  font-size: 16px;
+  text-align: center;
 }
 .wrapper {
   display: grid;
