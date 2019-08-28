@@ -4,32 +4,283 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>dashboard</title>
+  <title>BiShop || Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./dist/css/style.css">
+
 </head>
 <body>
   <div class="container">
-    <div class="burger_menu">
-        <i class="fas fa-bars"></i>
-    </div>
     <header class="header">
-      <div class="search">Search...</div>
-      <div class="profile">Profile</div>
-    </header>
+      <i class="fas fa-bars burger_menu"></i>
+      <div class="search">
+        <input class="search_input" placeholder="Search..." />
+      </div>
+      <div class="persona">
+        <div class="settings">
+          <ul class="list_settings">
+            <li class="profile">
+              <span class="profile_icon"><i class="far fa-user"></i></span>
+              <span class="profile_title">my profile</span>
+            </li>
 
+            <li class="profile">
+              <span class="profile_icon"><i class="fas fa-clipboard-list"></i></span>
+              <span class="profile_title">my account</span>
+            </li>
+
+            <li class="profile">
+              <span class="profile_icon"><i class="fas fa-sign-out-alt"></i></i></span>
+              <span class="profile_title">log out</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     
     <aside class="sidebar">
-      <div class="close_button">
-          <i class="fas fa-times sidenav__brand-close"></i>
+      <div class="brand">
+          <i class="fab fa-deskpro brand_icon"></i>
+          <a href="#" class="brand_link"><strong>Bi</strong><span>Shop</span></a>
+          <i class="fas fa-times close_button"></i>
       </div>
-      <ul class="list_item">
-        <li class="sidebar_item">Item One</li>
-        <li class="sidebar_item">Item Two</li>
-        <li class="sidebar_item">Item Three</li>
-        <li class="sidebar_item">Item Four</li>
-        <li class="sidebar_item">Item Five</li>
-      </ul>
+
+      <div class="sidenav_avatar">
+        <div class="sidenav_profile"></div>
+        <div class="sidenav_title">corozcob</div>
+      </div>
+
+      <div class="sidenav_list">
+        <ul class="list_sidenav">
+          <li class="sidebar_item">Monitor <i class="fas fa-chart-bar"></i></li>
+          <div>
+            <div class="topic">
+              <i class="topic_icon fas fa-cart-arrow-down"></i>
+              <span class="topic_title">wholesale</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">clients</li>
+              <li class="list_item">details</li>
+              <li class="list_item">items</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-warehouse topic_icon"></i>
+              <span class="topic_title">warehouse</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">clients</li>
+              <li class="list_item">details</li>
+              <li class="list_item">items</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-tshirt topic_icon"></i>
+              <span class="topic_title">workshop</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">clients</li>
+              <li class="list_item">details</li>
+              <li class="list_item">items</li>
+            </ul>
+          </div>
+
+
+          <li class="sidebar_item">Task list<i class="fas fa-tasks"></i></li>
+          <div>
+            <div class="topic">
+              <i class="fas fa-list-ul topic_icon"></i>
+              <span class="topic_title">to do</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-angle-double-right topic_icon"></i>
+              <span class="topic_title">doing</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-clipboard-check topic_icon"></i>
+              <span class="topic_title">done</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+          
+          <li class="sidebar_item">Report<i class="far fa-file-alt"></i></li>
+          <div>
+            <div class="topic">
+              <i class="fas fa-chart-line topic_icon"></i>
+              <span class="topic_title">trends</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-boxes topic_icon"></i>
+              <span class="topic_title">stock</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-tshirt topic_icon"></i>
+              <span class="topic_title">sales</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+
+          <li class="sidebar_item">Messages<i class="far fa-envelope"></i></li>
+          <div>
+            <div class="topic">
+              <i class="fas fa-envelope topic_icon"></i>
+              <span class="topic_title">inbox</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="far fa-star topic_icon"></i>
+              <span class="topic_title">starred</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-book-open topic_icon"></i>
+              <span class="topic_title">files</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+
+          <li class="sidebar_item">Alarm<i class="far fa-bell"></i></li>
+          <div>
+            <div class="topic">
+              <i class="fas fa-boxes topic_icon"></i>
+              <span class="topic_title">stock</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-store-alt topic_icon"></i>
+              <span class="topic_title">store</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-tshirt topic_icon"></i>
+              <span class="topic_title">workshop</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+
+          <li class="sidebar_item">Calendar<i class="fas fa-calendar-alt"></i></li>
+          <div>
+            <div class="topic">
+              <i class="far fa-calendar-check topic_icon"></i>
+              <span class="topic_title">event</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="fas fa-plane-departure topic_icon"></i>
+              <span class="topic_title">travel</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topic">
+              <i class="far fa-handshake topic_icon"></i>
+              <span class="topic_title">meeting</span>
+            </div>
+            <ul class="list list_hidden">
+              <li class="list_item">marketing</li>
+              <li class="list_item">design</li>
+              <li class="list_item">programming</li>
+            </ul>
+          </div>
+        </ul>
+      </section>
+
     </aside>
 
     <div class="main">
