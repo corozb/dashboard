@@ -109,7 +109,7 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-.list_item {
+.list_sidenav {
   padding: 0;
   margin: 0;
   width: 240px;
@@ -124,6 +124,75 @@ html, body {
   color: rgba(255, 255, 255, .5);
   text-transform: uppercase;
   font-size: 15px;
+}
+/* ------------- sidenav topics ------------ */
+.topic {
+  position: relative;
+  padding: 10px 30px;
+  color: rgba(255, 255, 255, .5);
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.topic--open {
+  color: #1BBAE1;
+  text-shadow: 0 0 10px #1BBAE1;
+}
+.topic--open::after {
+  transform: rotate(315deg);
+}
+.topic_icon {
+  font-size: 12px;
+  width: 12px;
+}
+.topic_title {
+  margin: 0 15px;
+}
+.topic_title::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  top: 17px;
+  right: 25px;
+  transform: rotate(225deg);
+  transition: all .2s;
+}
+.topic:hover > .topic_icon, 
+.topic:hover > .topic_title {
+  cursor: pointer;
+  color: #1BBAE1;
+  text-shadow: 0 0 10px #1BBAE1, 
+                   0 0 20px #1BBAE1, 
+                   0 0 30px #1BBAE1, 
+                   0 0 40px #fff;
+}
+/* ---------- subList Items------------ */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background: #1F2631;
+  visibility: visible;
+  overflow: hidden;
+  max-height: 200px;
+  transition: all .4s ease-in-out;
+}
+.list_item {
+  padding: 8px 30px;
+  text-transform: capitalize;
+}
+.list_item:first-child {
+  padding-top: 15px;
+}
+.list_item:hover {
+  cursor: pointer;
+  background-color: rgba(27, 186, 225, .7);
+}
+.list_hidden {
+  visibility: hidden;
+  max-height: 0;
 }
 /* ---------------- header ---------- */
 .header {
