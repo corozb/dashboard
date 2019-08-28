@@ -34,12 +34,53 @@ html, body {
   position: relative;
   overflow-x: hidden; /* Prevent overflow scroll from hidden sidenav */
 /* }  */
+/* --------- logo ---------- */
+.brand {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: rgba(0, 0, 0, .15);
+}
+.brand_icon {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #8BE5E9
+}
+.brand_link {
+  font-family: 'Audiowide', cursive;
+  font-size: 18px;
+  margin: 0 15px;
+  color: #8BE5E9;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+}
+/* -------- avatar ----------- */
+.sidenav_avatar {
+  background-color: rgba(255, 255, 255, .01);
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+}
+.sidenav_profile {
+  background: url(/dist/images/cristianalexisorozcobenjumea.PNG);
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+.sidenav_title {
+  letter-spacing: 1px;
+  font-size: 17px;
+  text-transform: capitalize
+}
 /* ------------- sidebar --------- */
 .sidebar {
   grid-area: sidebar;
-  background: #394263;
-  display: flex;
-  flex-direction: column;
+  background: #131B22;
   height: 100%;
   width: 240px;
   position: fixed;
@@ -48,6 +89,7 @@ html, body {
   z-index: 2;
   transform: translateX(-245px);
   transition: all .6s ease-in-out;
+  color: #fff;
 }
 .sidebar.active {
   transform: translateX(0)
@@ -62,18 +104,26 @@ html, body {
   font-size: 20px;
   color: var(--letter-color);
 }
+.sidenav_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .list_item {
   padding: 0;
-  margin-top: 85px;
+  margin: 0;
+  width: 240px;
   list-style: none;
 }
 .sidebar_item {
-  padding: 20px 20px 20px 40px;
-  color: var(--letter-color);
-}
-.sidebar_item:hover {
-  background: rgba(255, 255, 255, 0.2);
-  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px 3px;
+  color: rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+  font-size: 15px;
 }
 /* ---------------- header ---------- */
 .header {
@@ -103,7 +153,8 @@ html, body {
   background: transparent;
   padding: 12px;
   font-size: 20px;
-  color: #FFF
+  color: #FFF;
+  font-family: 'Quicksand', sans-serif;
 }
 .search_input:focus {
   outline: none;
