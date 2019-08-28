@@ -366,19 +366,64 @@ html, body {
   font-size: 16px;
   text-align: center;
 }
+/* ---- cards ---- */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   grid-auto-rows: 94px;
-  grid-gap: 20px;
+  grid-gap: 30px;
   margin: 20px;
 }
 .card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background: rgba(221,51,221,0.2);
+  justify-content: space-between;
+  padding: 12px;
+  background: #1F2631;
+  transform: translateY(0);
+  transition: all .3s;
+}
+.card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card_text {
+  font-size: 18px;
+  color: #1BBAE1;
+  margin: 0;
+  font-weight: lighter;
+}
+.card_detail {
+  margin: 2px;
+  color: #777
+}
+.card_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  font-size: 21px;
+  border-radius: 50%;
+}
+.bg_icon_task {
+  background: #E9C458
+}
+.bg_icon_event {
+  background: #27ae60
+}
+.bg_icon_mail {
+  background: #FC5D79
+}
+.bg_icon_calendar {
+  background: #1F9CA0
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1)
 }
 .features {
   -moz-column-count: 1;
