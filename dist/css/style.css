@@ -64,7 +64,7 @@ html, body {
   align-items: center;
 }
 .sidenav_profile {
-  background: url(/dist/images/cristianalexisorozcobenjumea.png);
+  background: url(/dist/images/cristianalexisorozcobenjumea.PNG);
   width: 64px;
   height: 64px;
   background-size: cover;
@@ -237,7 +237,7 @@ html, body {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  background-image: url(/dist/images/cristianalexisorozcobenjumea.png);
+  background-image: url(/dist/images/cristianalexisorozcobenjumea.PNG);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -315,7 +315,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   height: 250px;
-  background: url(/dist/images/earth-earth-at-night-night-lights-41949.jpeg);
+  background: url(/dist/images/earth-earth-at-night-night-lights-41949.JPEG);
   background-size: cover;
   color: #fff;
   margin-bottom: 20px;
@@ -425,7 +425,9 @@ html, body {
   transform: translateY(-3px);
   box-shadow: 0 5px 5px rgba(0,0,0,0.1)
 }
+/* ------ info analysis --------- */
 .features {
+  display: block;
   -moz-column-count: 1;
        column-count: 1;
   grid-column-gap: 20px;
@@ -434,20 +436,99 @@ html, body {
 .feat_card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-  background: #82bef6;
+  background: #1F2631;
   margin-bottom: 20px;
   -webkit-column-break-inside: avoid; /* to avoid break every column if the size ain't enough */
-  padding: 24px;
-  box-sizing: border-box;
+}
+.header_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background: #131B22;
+  color: #fff;
+}
+.header_title {
+  margin: 0 20px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+.header_link {
+  font-size: 16px;
+  color: #1BBAE1;
+  letter-spacing: normal;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* // Card header settings icons */
+.config {
+  display: flex;
+  margin: 8px;
+  align-self: flex-start;
+  background: rgba(255, 255, 255, .5);
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+}
+.config_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: #131B22;
+  font-size: 11px;
+}
+.config_block:not(:last-child) {
+  border-right: 1px solid rgba(0,0,0,.1);
+}
+.config:hover {
+  background: #fff;
+  cursor: pointer;
+}
+/* ----------- files ---------- */
+.files {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  grid-auto-rows: 214px;
+  grid-gap: 12px;
+  height: auto;
+}
+.document {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 0;
+  flex-direction: column;
+}
+.file_img {
+  width: 105px;
+  height: 136px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfaa6bQb4uYjXC26b47EOmDoJETj7Ch_r1PKrqQuic4QwiC1em");
+  background-size: cover;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
+              0 3px 1px -2px rgba(0, 0, 0, 0.12), 
+              0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+.file_img:hover {
+  transform: translateY(-4px)
+}
+.file_title {
+  margin: 8px 0 2px;
+  color: #777
+}
+.file_date {
+  font-size: 10px;
+  color: #fff;
 }
 .feat_card:first-child {
   height: 485px;
 }
-.feat_card:nth-child(2) {
+/* .feat_card:nth-child(2) {
   height: 200px;
-}
+} */
 .feat_card:nth-child(3) {
   height: 265px;
 }
