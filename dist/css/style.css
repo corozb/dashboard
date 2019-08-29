@@ -629,14 +629,24 @@ html, body {
 } */
 /* ---------------- footer ---------- */
 .footer {
-  grid-area: author;
-  background: #668CA5;
-}
-.footer {
+  grid-area: footer;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
+  background: #1F2631;
+  color: #777
+}
+.footer_right {
+  color: #1BBAE1
+}
+.heart_icon {
+  color: #FC5D79
+}
+.footer_signature {
+  color: #1BBAE1;
+  font-weight: bold;
+  text-decoration: none;
 }
 /* --------- responsive mobile-first ----------- */
 /* Non-mobile styles, 750px breakpoint */
@@ -646,7 +656,7 @@ html, body {
   grid-template-areas: 
     "sidebar search"
     "sidebar main"
-    "sidebar author"
+    "sidebar footer"
   }
 
   .sidebar {
