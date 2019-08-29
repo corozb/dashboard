@@ -611,15 +611,22 @@ html, body {
   font-size: 10px;
   color: #fff;
 }
+/* ---------- graph/ chart ------------ */
+.showChart {
+  width: 100%;
+  height: 331px;
+  font-size: 11px;
+  min-height: 0;
+}
 /* .feat_card:first-child {
   height: 485px;
 } */
 /* .feat_card:nth-child(2) {
   height: 200px;
 } */
-.feat_card:nth-child(3) {
+/* .feat_card:nth-child(3) {
   height: 265px;
-}
+} */
 /* ---------------- footer ---------- */
 .footer {
   grid-area: author;
