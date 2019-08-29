@@ -9,6 +9,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
+  background: #1A2229
 }
 .container {
   height: 100vh;
@@ -649,14 +650,16 @@ html, body {
   text-decoration: none;
 }
 /* --------- responsive mobile-first ----------- */
-/* Non-mobile styles, 750px breakpoint */
+/* Mobile screen, 750px breakpoint */
 @media only screen and (min-width: 46.875em)  {
   .container {
-  grid-template-columns: 240px 1fr;
+  display: grid;
+  grid-template-columns: 240px calc(100% - 240px); /* charts responsiveness doesn't wors with fr unit */
   grid-template-areas: 
     "sidebar search"
     "sidebar main"
-    "sidebar footer"
+    "sidebar footer";
+  height: 100vh;
   }
 
   .sidebar {
@@ -667,6 +670,19 @@ html, body {
   .close_button {
     visibility: hidden;
   }
+
+  .hero_wrapper {
+    padding: 0 30px;
+  }
+
+  /* .burger_menu {
+    display: none
+  } */
+
+  /* .persona {
+    height: 40px;
+    width: 40px;
+  } */
 }
 /* tablet, 1050px */
 @media only screen and (min-width: 65.625em) {
@@ -679,6 +695,13 @@ html, body {
          column-count: 2;
   }
   
+  .hero_wrapper {
+    flex-direction: row
+  }
+
+  .hero_gretting {
+    align-items: flex-start
+  }
 }
 
 
