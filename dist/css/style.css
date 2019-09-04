@@ -618,6 +618,36 @@ html, body {
   height: 331px;
   font-size: 11px;
   min-height: 0;
+  position: relative;
+}
+.btn_random {
+  position: absolute;
+  padding: 4px;
+  margin: 6px;
+  color:#1BBAE1;
+  background: none;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  right: 2px;
+}
+.btn_random:hover {
+  background: #1BBAE1;
+  cursor: pointer;
+  color: #fff
+
+}
+.showChart svg {
+  width: 100%;
+  height: 100%;
+}
+path.slice {
+  stroke-width: 2px
+}
+polyline {
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none
 }
 /* .feat_card:first-child {
   height: 485px;
