@@ -629,12 +629,13 @@ html, body {
   border: none;
   font-family: 'Quicksand', sans-serif;
   right: 2px;
+  outline: none;
 }
 .btn_random:hover {
   background: #1BBAE1;
   cursor: pointer;
-  color: #fff
-
+  color: #fff;
+  border-radius: 4px;
 }
 .showChart svg {
   width: 100%;
