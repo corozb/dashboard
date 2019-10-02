@@ -1,7 +1,8 @@
 # Dashboard
 
 <hr>
-In this project I have learned: 
+In this project I have learned: </br>
+
 - How to build a dashboard layout using CSS Grid & Flexbox.
 - Special rules for dynamic content blocks using repeat, auto-fit, min-max, column-count , grid-gap, and column-gap.
 - The right way to write mobile-first, responsive CSS using graduating min-width media queries.
